@@ -1,0 +1,75 @@
+header {
+    display: grid;
+    justify-content: center;
+}
+
+header img {
+    /* These two lines make the image responsive to any device */
+    max-width: 100%; 
+    height: 50vh;
+    /* Use the following two lines of code the next time you want to center an image in a grid row when using display grid */
+    align-self: center; 
+    justify-self: center; 
+}
+
+header nav {
+    text-align: center;
+}
+header ul{
+    padding: 0%;
+    list-style: none;
+    display:inline-flex;
+    justify-content: space-between;
+    gap: 5px ;
+}    
+header ul li {
+    font-size: 1.2em;
+    margin: 0 7px;
+
+}
+header ul li a {
+    text-decoration: none;
+    color: white !important;
+    border: 2px solid rgb(42, 167, 126);
+    border-radius: 8%;
+    background-color: rgb(42, 167, 126);
+    
+}
+@media (max-width: 768px) { 
+    header{
+        grid-template-columns: 1fr;
+    }
+}
+
+.section1{
+    width: 100%;
+    background-color: #f0f0f0; 
+    padding: 20px;
+}
+.section2{
+    display: inline-flex; 
+    
+}
+
+.one{
+    box-sizing: border-box;
+    border:2px solid rgb(42, 167, 126);
+    margin: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    text-align:  center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    
+}
+footer p{
+    font-size: small;
+}
+footer img{
+    width: 2rem;
+    height: 2rem;
+    margin: 3px;
+}
