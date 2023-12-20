@@ -1,6 +1,22 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background-color:rgb(244, 242, 242);
+    /* background-color: rgb(42, 167, 126); */
+}
+
+@media (max-width: 768px) { 
+    header{
+        grid-template-columns: 1fr;
+        background-image: none;
+    }
+}
 header {
     display: grid;
     justify-content: center;
+    /* background-color: rgb(42, 167, 126); */
+    
 }
 
 header img {
@@ -12,40 +28,58 @@ header img {
     justify-self: center; 
 }
 
+
 header nav {
-    text-align: center;
+    text-align: center; 
+    /* max-width: 100%; */
+    /* background-color: rgb(42, 167, 126); */
 }
-header ul{
-    padding: 0%;
+
+header ul {
     list-style: none;
-    display:inline-flex;
-    justify-content: space-between;
-    gap: 5px ;
-}    
+    display: flex;
+    gap: 5px;
+    background-color: rgb(42, 167, 126);
+    padding:10px;
+    width: 100% ; /* Adjust the padding as needed */
+    border-radius: 10px; 
+}
+    
 header ul li {
     font-size: 1.2em;
     margin: 0 7px;
+   
 
 }
 header ul li a {
     text-decoration: none;
     color: white !important;
-    border: 2px solid rgb(42, 167, 126);
-    border-radius: 8%;
-    background-color: rgb(42, 167, 126);
-    
-}
-@media (max-width: 768px) { 
-    header{
-        grid-template-columns: 1fr;
-    }
+    /* border: 2px solid rgb(42, 167, 126);
+    border-radius: 8%; */
 }
 
-.section1{
-    width: 100%;
-    background-color: #f0f0f0; 
+.section1{ 
+    font-family: 'Nunito', sans-serif;
+    font: 32px bold;
+    color: white;
+    background-image: url(https://i.ibb.co/2S4v3kz/istockphoto-1402094955-612x612.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+    margin-left: 8px;
+    margin-right: 8spx;
+    width: auto;
+    height: 50%;
+    border-radius: 10px;
     padding: 20px;
 }
+.section1 .styled-text{
+    color:rgb(42, 167, 126);
+}
+
+.section1 .styled-text a{
+    text-decoration: none;
+    color: rgb(42, 167, 126);
+} 
 .section2{
     display: inline-flex; 
     
@@ -58,18 +92,28 @@ header ul li a {
     border-radius: 5px;
     margin: 5px;
     text-align:  center;
+    background-image: url(https://i.ibb.co/5KpztW6/istockphoto-1471957254-612x612.jpg);
+    background-size: cover;
 }
 
 footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
     
 }
-footer p{
-    font-size: small;
+.footer-left img{
+    width: 50px;
+    height: auto;
+    /* margin: 3px; */
 }
-footer img{
-    width: 2rem;
-    height: 2rem;
-    margin: 3px;
+.footer-right hr{
+    width:100% !important;
+    margin:0;
+}
+.footer-right p{
+    font-size: small;
+    flex-grow: 1;
+    padding-left: 20px;
 }
